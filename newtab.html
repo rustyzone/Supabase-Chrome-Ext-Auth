@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supabase Auth</title>
+  <meta charset="utf-8">
+  <style>
+
+    html, body{
+      height:100%;
+      min-width:100%;
+      margin:0;
+      padding:0;
+      font-size:100%;
+    }
+    body{
+      background: #f7fafc;
+      color: #4a5568;
+    }
+
+    .userArea{
+      box-shadow:0 0 50px black;
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      background: white;
+      max-width: 500px;
+      margin: 0 auto;
+      left: 50%;
+      margin-left: -250px;
+      margin-top: -250px;
+      top:50%;
+      height:500px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="userArea">
+    <div class="loginArea" style="display:none;">
+
+      <div class="signup-box" style="margin:5px;border:2px dashed;">
+        <h3>Signup:</h3>
+        <label>Email:</label>
+        <input type="email">
+        <label>Password:</label>
+        <input type="password">
+        <button class="signup-btn-auth" type="button">Signup</button>
+      </div>
+      <div class="login-box" style="margin:5px;border:2px dashed;">
+        <h3>Login:</h3>
+        <label>Email:</label>
+        <input type="email">
+        <label>Password:</label>
+        <input type="password">
+        <button class="login-btn-auth" type="button">Login</button>
+      </div>
+    </div>
+    <div class="loggedInArea" style="display:none;">
+      <p>Logged in user: <span></span></p>
+      <button class="logout-btn-auth" type="button">Logout</button>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

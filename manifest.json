@@ -1,0 +1,14 @@
+{
+  "name": "Supabase Chrome MV2",
+  "version": "0.01",
+  "description": "Supabase Chrome MV2",
+  "background":{
+    "page": "background.html",
+    "persistent": false
+  },
+  "chrome_url_overrides":{
+    "newtab": "newtab.html"
+  },
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' https://YOUR-PROJECT.supabase.co; object-src 'self'"
+}
