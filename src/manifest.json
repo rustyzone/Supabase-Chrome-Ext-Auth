@@ -1,0 +1,13 @@
+{
+  "name": "Supabase Chrome MV3",
+  "version": "0.0.1",
+  "description": "Supabase Chrome MV3",
+  "background": {
+    "service_worker": "./bg-supa.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage"],
+  "manifest_version": 3
+}
